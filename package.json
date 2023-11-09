@@ -1,0 +1,41 @@
+{
+  "name": "@serenityjs/resources",
+  "version": "0.0.1",
+  "description": "Repo with bedrock related resources",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production tsc",
+    "build:dev": "tsc",
+    "start": "node dist/index.js",
+    "start:dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "bedrock",
+    "data"
+  ],
+  "author": "SerenityJS",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerenityJS/resources.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SerenityJS/resources/issues"
+  },
+  "homepage": "https://github.com/SerenityJS/resources#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "typings": "./dist/index.d.ts",
+	"module": "./dist/index.js",
+	"exports": {
+		"import": "./dist/index.js",
+		"require": "./dist/index.js"
+	},
+	"files": [
+		"dist"
+	]
+}
